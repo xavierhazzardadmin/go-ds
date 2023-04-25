@@ -55,10 +55,7 @@ func (s *Stack) Pop() any {
 }
 
 func (s *Stack) IsEmpty() bool {
-	if len(s.items) == 0 {
-		return true
-	}
-	return false
+	return len(s.items) == 0
 }
 
 func main() {
