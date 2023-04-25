@@ -12,6 +12,7 @@ type Stack struct {
 func (s *Stack) Peek() any {
 	if s.IsEmpty() {
 		fmt.Printf("Stack is empty\n")
+		return nil
 	}
 	length := len(s.items)
 	items := s.items[length-1]
